@@ -591,6 +591,11 @@ video {
   margin: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -751,6 +756,14 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
 }
 
 .overflow-hidden {
