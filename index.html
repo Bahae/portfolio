@@ -1,0 +1,148 @@
+<html class="scroll-smooth">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .name {
+            font-family: 'Caveat', cursive;
+        }
+
+        .dottedbg {
+            background-image: url('assets/images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="snap-y snap-mandatory select-none cursor-default">
+    <section class="snap-center bg-fixed relative grid place-items-center dottedbg min-h-screen">
+        <div class="min-h-screen   w-full absolute top-0"></div>
+        <div class="text-center z-10">
+            <img class="rounded-full shadow-xl mb-4 m-auto h-44 w-44 overflow-hidden" src="assets/images/profile.jpg"
+                alt="" srcset="">
+            <h1 class="text-5xl name text-gray-700 -rotate-3 mb-4">- Thabet Hamrit -</h1>
+            <h2 class="font-mono text-gray-400">Software Developer</h2>
+            <a href="#aboutme" class="absolute bottom-10 inset-x-0">
+                <svg class="animate-bounce w-6 h-6 m-auto" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.1"
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path opacity="0.6" d="M8.47021 10.74L12.0002 14.26L15.5302 10.74" stroke="#292D32"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section id="aboutme" class="snap-center grid place-items-center bg-white min-h-screen">
+        <header>
+            <h1 class="text-3xl font-semibold">About Me</h1>
+        </header>
+        <section>
+            <ul>
+                <li>Full Name: Thabit Elmoataz HAMRIT</li>
+                <li>Email: thabethamrit@gmail.com</li>
+                <li>Phone: +213 663 110 439</li>
+                <li>Website: www.thabet.dev</li>
+                <li>Address: M'sila, Algeria</li>
+            </ul>
+        </section>
+    </section>
+    <section class="snap-center grid place-items-center bg-white min-h-screen">
+        <header>
+            <h1 class="text-3xl font-semibold">My Resume</h1>
+        </header>
+        <section>
+            <ul>
+                <li>WORK EXPERIENCE</li>
+                <li>EDUCATION</li>
+            </ul>
+        </section>
+    </section>
+    <section class="snap-center grid place-items-center bg-white min-h-screen">
+        <header>
+            <h1 class="text-3xl font-semibold">Services</h1>
+        </header>
+        <section>
+            <ul>
+                <li>Web Application Development</li>
+                <li>Mobile Application Development</li>
+                <li>Backend Development</li>
+            </ul>
+        </section>
+    </section>
+    <section class="snap-center max-w-5xl m-auto grid place-items-center bg-white min-h-screen">
+        <header>
+            <h1 class="text-3xl font-semibold">Featured Projects</h1>
+        </header>
+
+        <section class="grid lg:grid-cols-3 sm:grid-cols-1 gap-6 w-full">
+            <div
+                class="text-center  hover:grayscale-0 duration-300 border  hover:border-blue-500 overflow-hidden flex flex-col">
+                <div class="relative flex-grow shadow-inner bg-slate-50">
+                    <img src="assets/images/flexy.png" alt="" srcset="">
+                    <div class="bg-gradient-to-t from-white inset-x-0 h-10 absolute bottom-0">
+
+                    </div>
+                </div>
+                <footer class="px-4 pb-4 text-center font-semibold ">
+                    <h1>Flexy</h1>
+                    <span class="text-gray-400 font-medium text-xs">Web/Mobile app</span>
+                </footer>
+                <footer class="grid grid-cols-5 gap-3 m-auto mb-4">
+                    <img class="max-h-6 m-auto" src="assets/images/laravel.png" alt="" srcset="">
+                    <img class="max-h-6 m-auto" src="assets/images/nodejs.png" alt="" srcset="">
+                    <img class="max-h-6 m-auto" src="assets/images/tailwindcss.png" alt="" srcset="">
+                    <img class="max-h-6 m-auto" src="assets/images/firebase.png" alt="" srcset="">
+                    <img class="max-h-6 m-auto" src="assets/images/flutter.png" alt="" srcset="">
+                </footer>
+            </div>
+            <div
+                class="text-center  hover:grayscale-0 duration-300 border border-slate-1000 hover:border-blue-500 overflow-hidden flex flex-col">
+                <div class="relative flex-grow bg-slate-50 ">
+                    <img src="assets/images/octopuce.jpg" alt="" srcset="">
+                    <div class="bg-gradient-to-t from-white inset-x-0 h-10 absolute bottom-0">
+
+                    </div>
+                </div>
+                <footer class="px-4 pb-4 text-center font-semibold ">
+                    <h1>OCTOPUCE</h1>
+                    <span class="text-gray-400 font-medium text-xs">Application Server</span>
+                </footer>
+                <footer class="grid grid-cols-1 gap-3 m-auto mb-4">
+                    <img class="max-h-6 m-auto" src="assets/images/golang2.png" alt="" srcset="">
+                </footer>
+            </div>
+            <div class="text-center border border-slate-100 overflow-hidden h-96 flex flex-col">
+                <div class="flex-grow bg-slate-50">
+                </div>
+                <footer class="p-4 text-center font-semibold ">
+                    <h1>Flexy</h1>
+                    <span class="text-gray-400 font-medium text-xs">Web/Mobile app</span>
+                </footer>
+                <footer class="grid grid-cols-3 gap-3 m-auto mb-4">
+                    <img class="max-h-6 m-auto" src="assets/images/laravel.png" alt="" srcset="">
+                    <img class="max-h-6 m-auto" src="assets/images/tailwindcss.png" alt="" srcset="">
+                    <img class="max-h-6 m-auto" src="assets/images/firebase.png" alt="" srcset="">
+                </footer>
+            </div>
+        </section>
+        <div class="rounded-full px-10 py-2 text-xs text-slate-400 ">
+            plus other projects
+        </div>
+    </section>
+</body>
+
+</html>
