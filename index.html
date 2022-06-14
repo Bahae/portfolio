@@ -9,75 +9,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
-        * {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .name {
-            font-family: 'Caveat', cursive;
-        }
-
-        .dottedbg {
-            background-image: url('assets/images/bg.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+        * {font-family:'Raleway',sans-serif;}
+        .name{font-family:'Caveat',cursive;}
     </style>
 </head>
 
 <body class="snap-y snap-mandatory select-none cursor-default">
-    <section class="snap-center bg-fixed relative grid place-items-center dottedbg min-h-screen">
-        <div class="min-h-screen   w-full absolute top-0"></div>
-        <div class="text-center z-10">
+    <section class="snap-center grid place-items-center min-h-screen">
+        <div></div>
+        <div class="text-center mb-16">
             <img class="rounded-full shadow-xl mb-4 m-auto h-44 w-44 overflow-hidden" src="assets/images/profile.jpg"
                 alt="" srcset="">
             <h1 class="text-5xl name text-gray-700 -rotate-3 mb-4">- Thabet Hamrit -</h1>
             <h2 class="font-mono text-gray-400">Software Developer</h2>
-            <a href="#aboutme" class="absolute bottom-10 inset-x-0">
-                <svg class="animate-bounce w-6 h-6 m-auto" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.1"
-                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                        stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path opacity="0.6" d="M8.47021 10.74L12.0002 14.26L15.5302 10.74" stroke="#292D32"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </div>
+        <div class="lg:flex opacity-80">
+            <div class="flex items-center lg:mr-10 lg:px-4">
+                <svg class="mr-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12.98V15.5C22 19 20 20.5 17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </a>
+                <a class="font-semibold text-blue-700 underline" href="mailto:thabethamrit@gmail.com">
+                    thabethamrit@gmail.com
+                </a>
+            </div>
+            <div class="flex items-center lg:mt-0 sm:mt-6">
+                <svg class="mr-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.12 10.3099C15.12 12.0299 13.73 13.4299 12 13.4299C10.27 13.4299 8.88 12.0399 8.88 10.3099C8.88 8.57994 10.28 7.18994 12 7.18994C12.34 7.18994 12.67 7.23994 12.97 7.33994" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.98002 4.30006C10.35 0.190061 18.82 1.60006 20.38 8.51006C21.53 13.5901 18.37 17.8901 15.6 20.5501C13.59 22.4901 10.41 22.4901 8.39002 20.5501C5.63002 17.8801 2.46002 13.5801 3.62002 8.50006" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Msila, Algeria</span>
+            </div>
         </div>
     </section>
-    <section id="aboutme" class="snap-center grid place-items-center bg-white min-h-screen">
-        <header>
-            <h1 class="text-3xl font-semibold">About Me</h1>
-        </header>
-        <section>
-            <ul>
-                <li>Full Name: Thabit Elmoataz HAMRIT</li>
-                <li>Email: thabethamrit@gmail.com</li>
-                <li>Phone: +213 663 110 439</li>
-                <li>Website: www.thabet.dev</li>
-                <li>Address: M'sila, Algeria</li>
-            </ul>
-        </section>
-    </section>
-    <section class="snap-center grid place-items-center bg-white min-h-screen">
-        <header>
-            <h1 class="text-3xl font-semibold">My Resume</h1>
-        </header>
-        <section>
-            <ul>
-                <li>WORK EXPERIENCE</li>
-                <li>EDUCATION</li>
-            </ul>
-        </section>
-    </section>
-    <section class="snap-center max-w-5xl m-auto grid place-items-center bg-white min-h-screen">
-        <header>
-            <h1 class="text-3xl font-semibold">Services</h1>
-        </header>
-        <section class="grid grid-cols-3 gap-6 gap-y-16 text-center">
+
+    <section class="snap-center py-8 border-y bg-slate-50">
+       
+        <h1 class="text-3xl font-semibold text-center mb-6">Services</h1>
+        <section class="max-w-5xl m-auto grid  lg:grid-cols-4 gap-6 sm:grid-cols-1 gap-y-16 text-center">
             <div>
-                <svg class="w-16 h-16 mb-4 m-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-10 h-10 mb-4 m-auto opacity-80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.54004 12C7.54004 15.04 8.03004 18.08 9.00004 21H8.00004" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8.00002 3H9.00002C8.51002 4.46 8.15002 5.95 7.90002 7.46" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,18 +57,18 @@
                     <path d="M3 16V15C8.84 16.95 15.16 16.95 21 15V16" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M3 9.0001C8.84 7.0501 15.16 7.0501 21 9.0001" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                             
-                <h1>Web Development</h1>
+                <h1 class="text-sm">Web Development</h1>
             </div>
             <div>
-                <svg class="w-16 h-16 mb-4 m-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-10 h-10 mb-4 m-auto opacity-80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 11.03V17C20 21 19 22 15 22H9C5 22 4 21 4 17V7C4 3 5 2 9 2H15C19 2 20 3 20 7" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M14 5.5H10" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12.0002 19.1C12.8562 19.1 13.5502 18.406 13.5502 17.55C13.5502 16.694 12.8562 16 12.0002 16C11.1442 16 10.4502 16.694 10.4502 17.55C10.4502 18.406 11.1442 19.1 12.0002 19.1Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                           
-                <h1>Mobile Development</h1>
+                <h1 class="text-sm">Mobile Development</h1>
             </div>
             <div>
-                <svg class="w-16 h-16 mb-4 m-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-10 h-10 mb-4 m-auto opacity-80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.3198 10H4.68977C3.20977 10 2.00977 8.79002 2.00977 7.32002V4.69002C2.00977 3.21002 3.21977 2.01001 4.68977 2.01001H19.3198C20.7998 2.01001 21.9998 3.22002 21.9998 4.69002V7.32002" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M19.3198 22H4.68977C3.20977 22 2.00977 20.79 2.00977 19.32V16.69C2.00977 15.21 3.21977 14.01 4.68977 14.01H19.3198C20.7998 14.01 21.9998 15.22 21.9998 16.69V19.32C21.9998 20.79 20.7898 22 19.3198 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M6 5V7" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -107,19 +78,19 @@
                     <path d="M14 6H18" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M14 18H18" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                        
-                <h1>Backend Development</h1>
+                <h1 class="text-sm">Backend Development</h1>
             </div>
 
             <div>
-                <svg class="w-16 h-16 mb-4 m-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-10 h-10 mb-4 m-auto opacity-80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 10.63V12.78C22 16.34 21.11 17.22 17.56 17.22H6.44C2.89 17.22 2 16.33 2 12.78V6.44C2 2.89 2.89 2 6.44 2H17.55C21.11 2 22 2.89 22 6.44" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12 17.22V22" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M2 13H22" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.5 22H16.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                                                              
-                <h1>UX/UI design</h1>
+                <h1 class="text-sm">UX/UI design</h1>
             </div>
-            <div>
+            <!-- <div>
                 <svg class="w-16 h-16 mb-4 m-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 10V2H3V14.1C3 14.81 3.14001 15.4 3.42001 15.86C3.88001 16.62 4.72 17.01 5.91 17.01H18.1C20 17.01 21 16.01 21 14.11" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M2 2H22" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -138,18 +109,16 @@
                     <path d="M10.3002 16.66L8.86022 18.4501C7.72022 19.8801 8.73022 21.99 10.5602 21.99H13.4302C15.2602 21.99 16.2802 19.8701 15.1302 18.4501L13.6902 16.66C12.8302 15.57 11.1702 15.57 10.3002 16.66Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                                                             
                 <h1>Digital Marketing</h1>
-            </div>
+            </div> -->
         </section>
         <div></div>
     </section>
-    <section class="snap-center max-w-5xl m-auto grid place-items-center bg-white min-h-screen">
-        <header>
-            <h1 class="text-3xl font-semibold">Featured Projects</h1>
-        </header>
+    <section class="snap-center max-w-5xl m-auto grid place-items-center bg-white lg:min-h-screen">
+        <h1 class="text-3xl font-semibold m-8">Featured Projects</h1>
 
-        <section class="grid lg:grid-cols-3 sm:grid-cols-1 gap-6 w-full">
+        <section class="grid lg:grid-cols-3 sm:grid-cols-none gap-6 w-full px-6">
             <div
-                class="text-center  hover:grayscale-0 duration-300 border  hover:border-blue-500 overflow-hidden flex flex-col">
+                class="text-center hover:grayscale-0 duration-300 border  hover:border-blue-500 overflow-hidden flex flex-col">
                 <div class="relative flex-grow shadow-inner bg-slate-50">
                     <img src="assets/images/flexy.png" alt="" srcset="">
                     <div class="bg-gradient-to-t from-white inset-x-0 h-10 absolute bottom-0">
@@ -160,9 +129,8 @@
                     <h1>Flexy</h1>
                     <span class="text-gray-400 font-medium text-xs">Web/Mobile app</span>
                 </footer>
-                <footer class="grid grid-cols-5 gap-3 m-auto mb-4">
+                <footer class="grid grid-cols-4 gap-3 m-auto mb-4">
                     <img class="max-h-6 m-auto" src="assets/images/laravel.png" alt="" srcset="">
-                    <img class="max-h-6 m-auto" src="assets/images/nodejs.png" alt="" srcset="">
                     <img class="max-h-6 m-auto" src="assets/images/tailwindcss.png" alt="" srcset="">
                     <img class="max-h-6 m-auto" src="assets/images/firebase.png" alt="" srcset="">
                     <img class="max-h-6 m-auto" src="assets/images/flutter.png" alt="" srcset="">
@@ -199,7 +167,7 @@
             </div>
         </section>
         <div class="rounded-full px-10 py-2 text-xs text-slate-400 ">
-            plus other projects
+            contact me via <a class="font-semibold text-blue-500 underline" href="mailto:thabethamrit@gmail.com">email</a> for demo
         </div>
     </section>
 </body>
