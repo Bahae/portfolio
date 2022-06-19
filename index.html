@@ -1,6 +1,7 @@
 <html class="scroll-smooth">
 
 <head>
+    <title>Thabet HAMRIT - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +11,7 @@
         rel="stylesheet">
     <style>
         * {font-family:'Raleway',sans-serif;}
-        .name{font-family:'Caveat',cursive;}
+        #name{font-family:'Caveat',cursive;}
         .dottedbg{
             background-color: #ffffff;
             background-image:  radial-gradient(#7db0fd 0.65px, transparent 0.65px), radial-gradient(#7db0fd 0.65px, #ffffff 0.65px);
@@ -21,6 +22,20 @@
             background-color: #ffffff;
             background: repeating-linear-gradient( 45deg, #fafcff, #fafcff 2px, #ffffff 2px, #ffffff 10px );        
         }
+        .services{
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        
+        /* #threeD {
+            transform: perspective(1500px) rotateY(15deg);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            transition: transform 1s ease 0s;
+        }
+        #threeD:hover {
+            transform: perspective(3000px) rotateY(5deg);
+        } */
+
+        
     </style>
 </head>
 
@@ -30,7 +45,7 @@
         <div class="text-center mb-16">
             <img class="rounded-full border-white shadow-xl mb-4 m-auto h-48 w-48 overflow-hidden" src="assets/images/profile.jpg"
                 alt="" srcset="">
-            <h1 class="text-5xl name text-gray-700 -rotate-3 mb-4">- Thabet Hamrit -</h1>
+            <h1 id="name" class="text-5xl text-gray-700 -rotate-3 mb-4">- Thabet Hamrit -</h1>
             <h2 class="font-mono text-gray-400 bg-white px-2 py-1 rounded-full">Full-Stack Developer</h2>
         </div>
         <div class="lg:flex bg-white px-4 py-1 rounded-full">
@@ -53,10 +68,10 @@
         </div>
     </section>
 
-    <section class="snap-center py-8 border-y bg-slate-50">
+    <section class="snap-center py-8 border-y services">
        
         <h1 class="text-3xl font-semibold text-center mb-6 text-blue-800">Services</h1>
-        <section class="max-w-5xl m-auto grid  lg:grid-cols-4 gap-6 sm:grid-cols-1 gap-y-16 text-center">
+        <section class="max-w-5xl m-auto grid lg:grid-cols-4 gap-6 sm:grid-cols-2 gap-y-16 text-center">
             <div>
                 <svg class="w-10 h-10 mb-4 m-auto opacity-80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -107,11 +122,12 @@
         </section>
         <div></div>
     </section>
-    <section class="snap-center grid place-items-center linesbg bg-white lg:min-h-screen">
+    <section class=" snap-center grid place-items-center linesbg bg-white lg:min-h-screen">
         <h1 class="text-3xl font-semibold m-8 text-blue-800">Featured Projects</h1>
 
         <section class="grid max-w-5xl m-auto lg:grid-cols-3 sm:grid-cols-none gap-6 w-full px-6">
-            <div class="text-center bg-white hover:grayscale-0 duration-300 border  hover:border-blue-500 hover:shadow-lg overflow-hidden flex flex-col">
+
+            <div id="threeD" class=" text-center bg-white hover:grayscale-0 duration-300 border  hover:border-blue-500 hover:shadow-lg overflow-hidden flex flex-col">
                 <div class="relative flex-grow shadow-inner bg-slate-50">
                     <img src="assets/images/flexy.png" alt="" srcset="">
                     <div class="bg-gradient-to-t from-white inset-x-0 h-10 absolute bottom-0">
@@ -129,7 +145,8 @@
                     <img class="max-h-6 m-auto" src="assets/images/flutter.png" alt="" srcset="">
                 </footer>
             </div>
-            <div class="text-center bg-white hover:grayscale-0 duration-300 border border-slate-1000 hover:border-blue-500 hover:shadow-lg overflow-hidden flex flex-col">
+
+            <div id="threeD" class="text-center bg-white hover:grayscale-0 duration-300 border border-slate-1000 hover:border-blue-500 hover:shadow-lg overflow-hidden flex flex-col">
                 <div class="relative flex-grow bg-slate-50 ">
                     <img src="assets/images/octopuce.jpg" alt="" srcset="">
                     <div class="bg-gradient-to-t from-white inset-x-0 h-10 absolute bottom-0">
@@ -144,7 +161,7 @@
                     <img class="max-h-6 m-auto" src="assets/images/golang2.png" alt="" srcset="">
                 </footer>
             </div>
-            <div class="text-center bg-white hover:grayscale-0 duration-300 border  hover:border-blue-500 hover:shadow-lg overflow-hidden flex flex-col">
+            <div id="threeD" class="text-center bg-white hover:grayscale-0 duration-300 border  hover:border-blue-500 hover:shadow-lg overflow-hidden flex flex-col">
                 <div class="relative flex-grow shadow-inner bg-slate-50">
                     <img src="assets/images/flexy.png" alt="" srcset="">
                     <div class="bg-gradient-to-t from-white inset-x-0 h-10 absolute bottom-0">
@@ -165,8 +182,10 @@
         </section>
         <div class="text-xs my-6 text-slate-400 bg-white px-4 rounded-full">
             contact me via <a class="font-semibold text-blue-500 underline" href="mailto:thabethamrit@gmail.com">email</a> for demo
+            <span class="text-white"></span>
         </div>
     </section>
+    
 </body>
 
 </html>
