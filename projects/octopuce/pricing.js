@@ -34,7 +34,15 @@ class Pricing{
             `
         })
 
-        table += '</tr></tfoot>'
+        table += `
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <th class="border text-xs font-medium bg-gray-50" colspan="`+this.plans.length+`">
+                    Lifetime license
+                </th>
+            </tr>
+        </tfoot>`
         return table += '</table>'
     }
 
@@ -122,8 +130,7 @@ class Pricing{
                             `+String(value).padStart(2, '0')+`
                         </span>
                     `
-
-                ;break
+                break
                 case "boolean": 
                     
                     if(value){
