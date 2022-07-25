@@ -187,7 +187,7 @@ class Pricing{
                 {
                     "id":"rtd",
                     "title":"Realtime Detection",
-                    "price": 40,
+                    "price": 10,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -195,7 +195,7 @@ class Pricing{
                 },{
                     "id":"cc",
                     "title":"Custom Configuration",
-                    "price": 10,
+                    "price": 3,
                     "qte":1,
                     "type":"boolean",
                     "tags":['New'],
@@ -203,7 +203,7 @@ class Pricing{
                 },{
                     "id":"mms",
                     "title":"Modem Models Suupport",
-                    "price": 5,
+                    "price": 1,
                     "qte":1,
                     "type":"checkbox",
                     "tags":[],
@@ -211,7 +211,7 @@ class Pricing{
                 },{
                     "id":"ml",
                     "title":"Max Modems connected",
-                    "price": 5,
+                    "price": 1,
                     "qte":1,
                     "type":"int",
                     "tags":[],
@@ -224,7 +224,7 @@ class Pricing{
                 {
                     "id":"wl",
                     "title":"Workers Limit",
-                    "price": 15,
+                    "price": 4,
                     "qte":1,
                     "type":"int",
                     "tags":[],
@@ -237,7 +237,7 @@ class Pricing{
                 {
                     "id":"p",
                     "title":"Task Prioritising",
-                    "price": 12,
+                    "price": 3,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -245,7 +245,7 @@ class Pricing{
                 },{
                     "id":"ts",
                     "title":"Task Schedule",
-                    "price": 15,
+                    "price": 4,
                     "qte":1,
                     "type":"boolean",
                     "tags":['Soon'],
@@ -259,7 +259,7 @@ class Pricing{
                 {
                     "id":"encryption",
                     "title":"Request Encryption",
-                    "price": 31,
+                    "price": 4,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -267,7 +267,7 @@ class Pricing{
                 },{
                     "id":"authentication",
                     "title":"Authentications",
-                    "price": 31,
+                    "price": 4,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -275,7 +275,7 @@ class Pricing{
                 },{
                     "id":"authlimit",
                     "title":"Authentication Limit",
-                    "price": 31,
+                    "price": 3,
                     "qte":1,
                     "type":"int",
                     "tags":[],
@@ -288,7 +288,7 @@ class Pricing{
                 {
                     "id":"private",
                     "title":"Private",
-                    "price": 18,
+                    "price": 3,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -296,7 +296,7 @@ class Pricing{
                 },{
                     "id":"local",
                     "title":"Local Network",
-                    "price": 31,
+                    "price": 5,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -304,7 +304,7 @@ class Pricing{
                 },{
                     "id":"internet",
                     "title":"Internet",
-                    "price": 45,
+                    "price": 7,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -317,7 +317,7 @@ class Pricing{
                 {
                     "id":"cj",
                     "title":"Custom Jobs",
-                    "price": 18,
+                    "price": 1,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -325,7 +325,7 @@ class Pricing{
                 },{
                     "id":"jl",
                     "title":"Jobs Limit",
-                    "price": 5,
+                    "price": 1,
                     "qte":1,
                     "type":"int",
                     "tags":[],
@@ -333,7 +333,7 @@ class Pricing{
                 },{
                     "id":"ujs",
                     "title":"USSD Job Steps",
-                    "price": 43,
+                    "price": 6,
                     "qte":1,
                     "type":"boolean",
                     "tags":[],
@@ -341,7 +341,7 @@ class Pricing{
                 },{
                     "id":"sjs",
                     "title":"SMS Job Steps",
-                    "price": 38,
+                    "price": 5,
                     "qte":1,
                     "type":"boolean",
                     "tags":['Soon'],
@@ -349,7 +349,7 @@ class Pricing{
                 },{
                     "id":"ajs",
                     "title":"AT-Command Job Steps",
-                    "price": 31,
+                    "price": 4,
                     "qte":1,
                     "type":"boolean",
                     "tags":['Soon'],
@@ -357,15 +357,15 @@ class Pricing{
                 },{
                     "id":"jsl",
                     "title":"Job Steps Limit",
-                    "price": 6,
-                    "qte":1,
+                    "price": 1,
+                    "qte":3,
                     "type":"int",
                     "tags":[],
                     "unit":null
                 },{
                     "id":"mjs",
                     "title":"Mixed job steps types",
-                    "price": 31,
+                    "price": 5,
                     "qte":1,
                     "type":"boolean",
                     "tags":['Soon'],
@@ -390,7 +390,7 @@ var plan1 = {
         
         "security.encryption":false,
         "security.authentication":false,
-        "security.authlimit":1,
+        "security.authlimit":0,
         
         "access.private":true,
         "access.local":false,
