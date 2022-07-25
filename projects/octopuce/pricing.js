@@ -419,7 +419,7 @@ var plan2 = {
         
         "security.encryption":true,
         "security.authentication":true,
-        "security.authlimit":2,
+        "security.authlimit":5,
         
         "access.private":true,
         "access.local":true,
